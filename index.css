@@ -8,11 +8,12 @@ body {
   font-size: 15px;
   line-height: 1.5;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   color: black;
   background-color: white;
   margin: 0;
+  min-width: 563px;
 }
 .header {
   display: flex;
@@ -29,14 +30,16 @@ body {
   font-size: 24px;
   align-self: center;
   max-width: 1932px;
+  padding: 16px 25px;
 }
+
 .food-image {
   padding: 24px 8px;
   float: left;
 }
 @media (min-width: 601px) {
   .food-image {
-    width: 24%;
+    width: 17%;
   }
 }
 img {
@@ -66,7 +69,7 @@ p {
 
 .iamge-container {
   display: flex;
-  width: 58%;
+  width: 100%;
   justify-content: center;
   align-self: center;
 }
@@ -169,12 +172,12 @@ p {
   font-size: 16px;
 }
 .prg-div p {
-  width: 76%;
   text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-left: 20%;
+  padding-left: 18%;
+  width: 79%;
 }
 
 .end-footer {
@@ -184,7 +187,6 @@ p {
 
   flex-direction: row;
   display: flex;
-  padding-left: 146px;
 }
 
 .footer-div-1 {
@@ -199,6 +201,7 @@ p {
   font-weight: 400;
   margin: 10px 0;
   font-size: 24px;
+  max-width: 463px;
 }
 .footer-div-2 {
   padding: 0 8px;
@@ -206,7 +209,7 @@ p {
 
 @media (min-width: 601px) {
   .footer-div-2 {
-    width: 13.33333%;
+    width: 33.33333%;
   }
 }
 .footer-div-2 h3 {
@@ -282,38 +285,41 @@ p {
 
 .food-prg {
   flex-wrap: wrap;
+  padding-left: 12px;
 }
 .present-div {
   color: rgb(95, 95, 95);
   font-weight: 200;
   width: 100%;
-  padding-left: 41%;
-  display: flex;
+  padding-left: 33%;
+  display: block;
   padding-bottom: 20px;
   text-align: start;
   font-size: 15px;
   /* align-items: flex-start; */
+  max-width: 512px;
 }
 
 .link-class {
   color: rgb(95, 95, 95);
   font-weight: 200;
-  width: 100%;
-  padding-left: 41%;
-  display: flex;
+  /* width: 100%; */
+  padding-left: 33%;
+  /* display: flex; */
   padding-bottom: 20px;
   text-align: start;
   font-size: 15px;
   /* align-items: flex-start; */
+  max-width: 396px;
 }
-.main-food-div {
+/* .main-food-div {
   margin: 16px;
-}
+} */
 .second-main-food-div h3 {
   font-weight: 100;
+  width: 100%;
 
-  padding: 17px;
-  font-size: 24px;
+  font-size: 23px;
   color: #4a4a4a;
 }
 @media (min-width: 601px) {
@@ -322,17 +328,17 @@ p {
   }
 }
 
-@media (min-width: 601px) {
+@media (max-width: 601px) {
   .end-footer {
     width: 100%;
-
+    flex-direction: column;
     display: flex;
   }
 }
 
 @media (min-width: 601px) {
   .food-prg {
-    width: 100%;
+    width: 67%;
   }
 }
 
@@ -340,5 +346,16 @@ p {
   .header {
     width: 100%;
     display: flex;
+  }
+}
+@media (min-width: 601px) {
+  html {
+    display: grid;
+    width: 100%;
+  }
+}
+@media (min-width: 601px) {
+  .present-div {
+    padding-left: 41px;
   }
 }
